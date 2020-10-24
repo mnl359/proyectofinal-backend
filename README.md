@@ -4,7 +4,7 @@ Aplicación de pizzas usando Spring Boot y desplegada en AWS
 
 ## Arquitectura
 
-![](images/backend-infra.png)
+![](images/infrastructure.png)
 
 Para el backend de la aplicación, la infraestructura necesaria es:
 

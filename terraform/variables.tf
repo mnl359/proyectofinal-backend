@@ -15,7 +15,7 @@ variable "tags" {
   description = "Description tags for resources"
   type        = map(string)
   default     = {"owner":"manuela.carrasco", 
-                 "project":"Rampup2020",
+                 "project":"Proyecto Final",
                  "provisioner":"Terraform"}
 }
 
@@ -61,7 +61,7 @@ variable "backend_port" {
 variable "ecs_cluster-name" {
   description = "Cluster name"
   type        = string
-  default     = "backend-pizza"
+  default     = "pizza-application"
 }
 
 ## Autoscaling group variables
