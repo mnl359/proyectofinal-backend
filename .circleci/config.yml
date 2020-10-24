@@ -116,13 +116,12 @@ jobs:
     <<: *terraform
     steps:
       - attach_workspace:
-          at: ~/pizza-aplication
-      - run:
-          name: Empty the bucket
-          command: aws s3 rm s3://pizza-application-computacion-nube --recursive
+          at: ~/project
       - run:
           name: destroy app
-          command: terraform destroy -auto-approve
+          command: |
+            cd terraform
+            terraform destroy -auto-approve
 
 workflows:
   version: 2
